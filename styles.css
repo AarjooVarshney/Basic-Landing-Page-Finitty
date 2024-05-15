@@ -1,0 +1,163 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+    font-size: 32px; /* Increased font size for the Finity heading */
+    color: #00c853;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #333;
+    font-weight: 500;
+}
+
+nav ul li .signup {
+    background-color: #00c853;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #e0f7fa;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.app-buttons a img {
+    width: 150px;
+    margin-right: 10px;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 4cm; /* Shift the image down by 2 cm */
+}
+
+/* Features Section */
+.features {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.features .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; /* Adjust the gap between features */
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.features h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 50px;
+    height: 3px;
+    background-color: #00c853; /* Accent color */
+    transform: translateX(-50%);
+}
+
+.feature {
+    flex-basis: 30%; /* Adjust the width of individual features */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature:hover {
+    transform: translateY(-5px); /* Add a slight lift effect on hover */
+}
+
+.feature h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+.cta-button {
+    background-color: #ff6f00; /* Orange background color */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block; /* Ensures the button takes only the necessary width */
+    text-decoration: none; /* Remove underline */
+}
+
+.cta-button:hover {
+    background-color: #e65100; /* Darker orange on hover */
+}
